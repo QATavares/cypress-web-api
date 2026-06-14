@@ -1,0 +1,39 @@
+# Dependências
+node_modules/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Relatórios
+cypress/reports/
+mochawesome-report/
+mochawesome-report.json
+mochawesome.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.nyc_output/
+
+# Arquivos temporários
+*.tmp
+*.temp
