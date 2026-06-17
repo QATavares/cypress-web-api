@@ -54,3 +54,10 @@ Após a execução dos testes, os relatórios são gerados automaticamente.
     - Enviar um GET para API
     - Exibir o conteúdo do campo “name” da estrutura “list”.
     - Validar o status code da resposta do serviço.
+
+### Validações Complementares
+
+Além dos requisitos principais, foram implementadas:
+
+- Validação de contrato da API utilizando AJV.
+- Simulação de consulta SQL utilizando Cypress Task (cy.task), demonstrando integração entre testes automatizados e banco de dados.

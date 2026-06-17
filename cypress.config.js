@@ -27,14 +27,26 @@ module.exports = defineConfig({
     async setupNodeEvents(on, config) {
       // Cucumber
       await addCucumberPreprocessorPlugin(on, config);
-
+      //SQL
       on(
         "file:preprocessor",
         createBundler({
           plugins: [createEsbuildPlugin(config)],
         })
       );
-
+      on("task", {
+        execQuery(query) {
+          console.log(`Query executando: ${query}`);
+          const users = [
+            {
+              id: 1,
+              nome: "Rodrigo",
+              email: "teste@teste.com.br"
+            }
+          ];
+          return users;
+        }
+      })
       // Mochawesome Reporter
       require("cypress-mochawesome-reporter/plugin")(on);
 
